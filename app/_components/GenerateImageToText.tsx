@@ -46,6 +46,10 @@ export function GenerateImageToText() {
       setLoading(false);
     }
   };
+  function setFile(arg0: File | null): void {
+    throw new Error("Function not implemented.");
+  }
+
   return (
     <div>
       <form onSubmit={generateImage}>
