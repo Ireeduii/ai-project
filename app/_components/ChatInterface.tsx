@@ -91,7 +91,7 @@ export function ChatInterface() {
   return (
     <div>
       <DropdownMenu>
-        <DropdownMenuTrigger>
+        <DropdownMenuTrigger asChild>
           <Button className="bg-black rounded-full">
             <MessageCircle />
           </Button>
