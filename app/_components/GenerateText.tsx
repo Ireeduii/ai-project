@@ -21,7 +21,6 @@ export const GenerateText = () => {
     e.preventDefault();
     setLoading(true);
     setPicture("");
-
     try {
       const response = await fetch("/api/generate-image", {
         method: "POST",
@@ -30,17 +29,18 @@ export const GenerateText = () => {
         },
         body: JSON.stringify({ prompt }),
       });
+      console.log("prompt", prompt);
 
       const data = await response.json();
 
       if (data.image) {
         setPicture(data.image);
       } else {
-        alert("Failed to generate image");
+        alert("Failed to generate imagee");
       }
     } catch (error) {
       console.error("Error:", error);
-      alert("Failed to generate image");
+      alert("Failed to generate imageee");
     } finally {
       setLoading(false);
     }

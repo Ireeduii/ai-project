@@ -33,7 +33,8 @@
 import { GoogleGenAI } from "@google/genai";
 import { NextRequest, NextResponse } from "next/server";
 
-const ai = new GoogleGenAI({ apiKey: process.env.GEMIINI_API_KEY });
+const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
+console.log("gemini", process.env.GEMINI_API_KEY);
 
 export async function POST(req: NextRequest) {
   const p = "";
