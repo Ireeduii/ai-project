@@ -11,6 +11,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import Image from "next/image";
 
 export const GenerateTextToText = () => {
   // const [picture, setPicture] = useState("");
@@ -53,7 +54,7 @@ export const GenerateTextToText = () => {
         <Card>
           <CardHeader>
             <div className="flex gap-2">
-              <img className="w-[15px] h-[15px]" src="star.png" />
+              <Image className="w-[15px] h-[15px]" src="star.png" alt="star" />
               <CardTitle>Ingredient recognition</CardTitle>
               <button
                 type="button"
@@ -91,7 +92,7 @@ export const GenerateTextToText = () => {
 
           <CardDescription>
             <div className="flex gap-2 ml-8 ">
-              <img className=" mt-1" src="sheet.png" alt="sheet" />
+              <Image className=" mt-1" src="sheet.png" alt="sheet" />
               <CardTitle className="text-black text-[16px]">
                 Identified Ingredients
               </CardTitle>

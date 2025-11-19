@@ -11,6 +11,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import Image from "next/image";
 
 export const GenerateText = () => {
   const [picture, setPicture] = useState<string>("");
@@ -94,16 +95,16 @@ export const GenerateText = () => {
 
             <CardDescription>
               <div className="flex gap-2 ml-8">
-                <img className="mt-1" src="image.png" alt="image"/>
+                <Image className="mt-1" src="image.png" alt="image"/>
                 <CardTitle className="text-black text-[16px] mt-1">
                   Result
                 </CardTitle>
               </div>
               {picture && (
                 <div>
-                  <img
+                  <Image
                     className="rounded-lg w-[300px] h-[300px] flex mx-auto mt-3"
-                    src="/sheet.png"
+                    src={picture}
                     alt="Generated"
                   />
                 </div>

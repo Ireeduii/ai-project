@@ -36,7 +36,7 @@ export function ChatInterface() {
   };
 
   return (
-    <div className="w-[250px] ml-100 mt-30">
+    <div className="w-[250px] ml-100 mt-20">
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
           <Button className="bg-black rounded-full">

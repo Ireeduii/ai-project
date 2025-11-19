@@ -135,6 +135,7 @@ import {
 import { useState } from "react";
 import { TabsContent } from "@/components/ui/tabs";
 import { Input } from "@/components/ui/input";
+import Image from "next/image";
 
 export function GenerateImageToText() {
   const [file, setFile] = useState<File | null>(null);
@@ -183,14 +184,14 @@ export function GenerateImageToText() {
           <Card>
             <CardHeader>
               <div className="flex gap-2">
-                <img className="w-[15px] h-[15px]" src={"/star.png"} alt="star" />
+                <Image className="w-[15px] h-[15px]" src={"/star.png"} alt="star"/>
                 <CardTitle>Ingredient recognition</CardTitle>
                 <button
                   type="button"
                   className="ml-48 border rounded-md w-6 h-6 flex justify-center items-center "
                   onClick={() => setFile(null)}
                 >
-                  <img className="w-3 h-3  " src="reload.png" />
+                  <img className="w-3 h-3  " src="reload.png" alt="reload"/>
                 </button>
               </div>
 
