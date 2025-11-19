@@ -54,14 +54,14 @@ export const GenerateText = () => {
           <Card>
             <CardHeader>
               <div className="flex gap-2">
-                <img className="w-[15px] h-[15px]" src="star.png" alt="star" />
+                <Image className="w-[15px] h-[15px]" src="star.png" alt="star" />
                 <CardTitle>Food image creator</CardTitle>
                 <button
                   type="button"
                   onClick={() => setPrompt("")}
                   className="ml-48 border rounded-md w-6 h-6 flex justify-center items-center"
                 >
-                  <img className="w-3 h-3" src="reload.png" alt="reload" />
+                  <Image className="w-3 h-3" src="reload.png" alt="reload" />
                 </button>
               </div>
 

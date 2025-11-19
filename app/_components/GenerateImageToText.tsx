@@ -191,7 +191,7 @@ export function GenerateImageToText() {
                   className="ml-48 border rounded-md w-6 h-6 flex justify-center items-center "
                   onClick={() => setFile(null)}
                 >
-                  <img className="w-3 h-3  " src="reload.png" alt="reload"/>
+                  <Image className="w-3 h-3  " src="reload.png" alt="reload"/>
                 </button>
               </div>
 
