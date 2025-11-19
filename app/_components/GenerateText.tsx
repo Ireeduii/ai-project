@@ -13,9 +13,9 @@ import {
 } from "@/components/ui/card";
 
 export const GenerateText = () => {
-  const [picture, setPicture] = useState("");
-  const [prompt, setPrompt] = useState("");
-  const [loading, setLoading] = useState(false);
+  const [picture, setPicture] = useState<string>("");
+  const [prompt, setPrompt] = useState<string>("");
+  const [loading, setLoading] = useState<boolean>(false);
 
   const generateToText = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -86,7 +86,7 @@ export const GenerateText = () => {
               <Button
                 type="submit"
                 disabled={loading || !prompt}
-                className="ml-82 -mt-2 bg-gray-500"
+                className="ml-130 -mt-2 bg-gray-500"
               >
                 {loading ? "Generating..." : "Generate"}
               </Button>

@@ -1,5 +1,6 @@
 import { InferenceClient } from "@huggingface/inference";
 import { NextRequest, NextResponse } from "next/server";
+
 const hf = new InferenceClient(process.env.HF_TOKEN || "");
 console.log("huggin face", process.env.HF_TOKEN);
 
@@ -28,7 +29,7 @@ export async function POST(req: NextRequest) {
   } catch (error) {
     console.error("Error generating image:", error);
     return NextResponse.json(
-      { error: "Failed to generate imageee" },
+      { error: "Failed to generate image" },
       { status: 500 }
     );
   }

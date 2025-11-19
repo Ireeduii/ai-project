@@ -8,7 +8,7 @@ import { GenerateImageToText } from "./_components/GenerateImageToText";
 import { ChatInterface } from "./_components/ChatInterface";
 export function TabsDemo() {
   return (
-    <div className="flex flex-wrap mt-20 ml-20 max-w-sm ">
+    <div className="flex justify-center items-center mt-40 ml-40 w">
       <Tabs defaultValue="account">
         <TabsList className="mb-5 flex gap-2 ml-6">
           <TabsTrigger value="Image creator">Image creator</TabsTrigger>
@@ -20,8 +20,9 @@ export function TabsDemo() {
         <GenerateText />
         <GenerateTextToText />
         <GenerateImageToText />
+          <ChatInterface />
       </Tabs>
-      <ChatInterface />
+    
     </div>
   );
 }

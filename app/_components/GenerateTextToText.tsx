@@ -83,7 +83,7 @@ export const GenerateTextToText = () => {
             <Button
               type="submit"
               disabled={loading || !prompt}
-              className="ml-82 -mt-2 bg-gray-500"
+              className="ml-130 -mt-2 bg-gray-500"
             >
               {loading ? "Extracting... " : "Generate"}
             </Button>
