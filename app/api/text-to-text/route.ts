@@ -19,8 +19,8 @@ export async function POST(req: NextRequest) {
         {
           role: "user",
           content: `Extract only the ingredients from this food description and return them as a simple comma-separated list without any explanation.
-Food description: ${prompt}
-Ingredients:`,
+              Food description: ${prompt}
+              Ingredients:`,
         },
       ],
     });

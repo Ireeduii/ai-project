@@ -184,14 +184,14 @@ export function GenerateImageToText() {
           <Card>
             <CardHeader>
               <div className="flex gap-2">
-                <Image className="w-[15px] h-[15px]" src={"/star.png"} alt="star"/>
+                <Image width={15} height={15} className="w-[15px] h-[15px]" src={"/star.png"} alt="star"/>
                 <CardTitle>Ingredient recognition</CardTitle>
                 <button
                   type="button"
                   className="ml-48 border rounded-md w-6 h-6 flex justify-center items-center "
                   onClick={() => setFile(null)}
                 >
-                  <Image className="w-3 h-3  " src="reload.png" alt="reload"/>
+                  <Image width={3} height={3} className="w-3 h-3  " src="/reload.png" alt="reload"/>
                 </button>
               </div>
 
