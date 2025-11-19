@@ -54,7 +54,7 @@ export async function POST(req: Request) {
 
 
 
-    const text = (result as any).generated_text || (result as any).text || "";
+    const text = (result).generated_text || (result).text || "";
 
     return NextResponse.json({ text });
   } catch (error) {
