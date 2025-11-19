@@ -183,7 +183,7 @@ export function GenerateImageToText() {
           <Card>
             <CardHeader>
               <div className="flex gap-2">
-                <img className="w-[15px] h-[15px]" src={"/star.png"} />
+                <img className="w-[15px] h-[15px]" src={"/star.png"} alt="star" />
                 <CardTitle>Ingredient recognition</CardTitle>
                 <button
                   type="button"

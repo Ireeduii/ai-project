@@ -59,7 +59,7 @@ export const GenerateTextToText = () => {
                 type="button"
                 className=" ml-48 border rounded-md w-6 h-6 flex  justify-center items-center"
               >
-                <img className="w-3 h-3" src="reload.png" />
+                <img className="w-3 h-3" src="reload.png" alt="reload"/>
               </button>
             </div>
 
@@ -91,7 +91,7 @@ export const GenerateTextToText = () => {
 
           <CardDescription>
             <div className="flex gap-2 ml-8 ">
-              <img className=" mt-1" src="sheet.png" />
+              <img className=" mt-1" src="sheet.png" alt="sheet" />
               <CardTitle className="text-black text-[16px]">
                 Identified Ingredients
               </CardTitle>
