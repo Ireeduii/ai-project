@@ -103,7 +103,7 @@ export const GenerateText = () => {
                 <div>
                   <img
                     className="rounded-lg w-[300px] h-[300px] flex mx-auto mt-3"
-                    src={picture}
+                    src="/sheet.png"
                     alt="Generated"
                   />
                 </div>

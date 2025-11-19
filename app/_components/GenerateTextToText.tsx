@@ -13,10 +13,10 @@ import {
 } from "@/components/ui/card";
 
 export const GenerateTextToText = () => {
-  const [picture, setPicture] = useState("");
-  const [prompt, setPrompt] = useState("");
-  const [ingredients, setIngredients] = useState("");
-  const [loading, setLoading] = useState(false);
+  // const [picture, setPicture] = useState("");
+  const [prompt, setPrompt] = useState<string>("");
+  const [ingredients, setIngredients] = useState<string>("");
+  const [loading, setLoading] = useState<boolean>(false);
 
   const extractIngredients = async (e: React.FormEvent) => {
     e.preventDefault();
